@@ -13,13 +13,11 @@ function compute()
         var interest = principal * years * rate /100;
         // calculate end year
         var year = new Date().getFullYear()+parseInt(years);
-        //calculate the amount
-        var amount = principalAmount + interest;
-
+      
         // write the result in the span
         document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,"
             + "\<br\>at an interest rate of <mark>"+rate+"%\<mark><br\>"
-            + "You will receive an amount of <mark>"+amount+"</mark>,\<br\>"
+            + "You will receive an amount of <mark>"+interest+"</mark>,\<br\>"
             +" in the year <mark>"+year+"</mark>\<br\>"
 
     }else{
